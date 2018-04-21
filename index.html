@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pomodoro Timer</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script defer src="css/fontawesome-all.js" ></script>
+
+
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="pomodoro-container" class=" container text-center">
+            <!-- <h1>Pomodoro Timer</h1> -->
+            
+            <div id="tomato">
+                <div id="clock-display">00:00</div>
+            </div>
+            
+            <div class="container" id="clock-controls">
+                <button id="clock-play" class="btn"><i class="fas fa-play"></i></button>
+                <button id="clock-reset" class="btn"><i class="fas fa-sync"></i></button>
+            </div>
+            
+            <div class='row' id="session-controls">
+                <div id="work-control" class="col">
+                    <!-- <p>Work Session</p> -->
+                    <button id="minWork" class="btn" onclick="decWork()">-</button>
+                    <span id="work-length">5</span>
+                    <button id="plusWork" class="btn" onclick="incWork()">+</button>
+                </div>
+                
+                <div id="break-control" class="col">
+                    <!-- <p>Break Session</p> -->
+                    <button id="minBreak" class="btn" onclick="decBreak()">-</button>
+                    <span id="break-length">5</span>
+                    <button id="plusBreak" class="btn" onclick="incBreak()">+</button>
+                </div>
+                
+            </div>
+        </div>    
+    </body>
+</html>

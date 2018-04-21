@@ -1,0 +1,49 @@
+html,
+body {
+  min-height: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: tomato;
+  color: white;
+  font-size: 24px;
+}
+
+/*center all items on screen*/
+#pomodoro-container,
+#clock-controls,
+#session-controls {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#pomodoro-container {
+    width: 95%;
+    border: 1px solid white;
+}
+
+#tomato {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid white;
+    background-color: #FF8670;
+}
+
+#clock-display {
+    margin-top: calc(50% - 1em);
+}
+
+#clock-controls {
+    margin-top: 2em;
+}
+
+button {
+    border: none;
+    background: none;
+    color: white;
+}
+
+.col {
+    display: inline-block;
+    margin: 2em;
+}

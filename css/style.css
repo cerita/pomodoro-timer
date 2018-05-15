@@ -17,6 +17,8 @@ body {
 
 #pomodoro-container {
     width: 95%;
+    margin-top: 3em;
+    padding-top: 3em;
     border: 1px solid white;
 }
 
@@ -41,6 +43,10 @@ button {
     border: none;
     background: none;
     color: white;
+}
+
+button:hover{
+    cursor: pointer;
 }
 
 .col {

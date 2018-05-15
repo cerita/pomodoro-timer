@@ -13,8 +13,6 @@
         <link rel="stylesheet" href="css/style.css">
         <script defer src="css/fontawesome-all.js" ></script>
 
-
-        <script src="app.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -35,19 +33,21 @@
             <div class='row' id="session-controls">
                 <div id="work-control" class="col">
                     <!-- <p>Work Session</p> -->
-                    <button id="minWork" class="btn" onclick="decWork()">-</button>
+                    <button id="decWork" class="btn" >-</button>
                     <span id="work-length">5</span>
-                    <button id="plusWork" class="btn" onclick="incWork()">+</button>
+                    <button id="incWork" class="btn">+</button>
                 </div>
                 
                 <div id="break-control" class="col">
                     <!-- <p>Break Session</p> -->
-                    <button id="minBreak" class="btn" onclick="decBreak()">-</button>
+                    <button id="decBreak" class="btn">-</button>
                     <span id="break-length">5</span>
-                    <button id="plusBreak" class="btn" onclick="incBreak()">+</button>
+                    <button id="incBreak" class="btn">+</button>
                 </div>
                 
             </div>
-        </div>    
+        </div>   
+        <script src="app.js"></script> 
     </body>
+
 </html>
